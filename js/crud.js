@@ -1,32 +1,37 @@
-import  {showMovies} from "./functions.js";
+import  {showMovies, dataPOST} from "./functions.js";
 
 const URL = "http://localhost:3000"
 const headers = new Headers ({'Content-Type': 'application/json'});
 
-export function getMovies(){
-     fetch(`${URL}/peliculas`)
-      .then((response) => {
-        return response.json();
-      })
-      .then((json) => {
-        showMovies(json);
-      })
-      .catch((e) => console.log(e));
+//metodo GET
+export async function getMovies(){
+  try {
+    let response = await fetch(`${URL}/peliculas`);
+    let movies = await response.json; 
+    showMovies(movies);
+  } catch (error) {
+    console.log(error);
+  }   
 }
-
 getMovies();
 
+//Metodo POST
+export async function postPersonas(data){
+    let config = {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(data)
+    }
+    try {
+      let response = await fetch(`${URL}/peliculas`,config);
+      let moviesPost = await response.json;
+    } catch (error) {
 
-//export async function postPersonas(data){
-//    let config = {
-//        method: 'POST',
-//        headers: headers,
-//        body: JSON.stringify(data)
-//    }
-//
-//    let personas = await (await fetch(`${URL}/persona`,config)).json();
-//
-//}
+    }
+
+}
+
+
 //
 //export async function deletePersonas(tr,id){
 //

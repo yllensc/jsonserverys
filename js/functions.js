@@ -50,3 +50,7 @@ export function showMovies(movies) {
     cardContainer.appendChild(card);
   });
 }
+
+function addMovie(){
+  
+}
