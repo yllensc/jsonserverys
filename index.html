@@ -71,44 +71,67 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Agrega una nueva peli 🍿📽️ </h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Gestión de pelis 🍿📽️ </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="form__addMovie" action="" method="post">
-                            <div id="registroForm">
-                                <div class="mb-3">
-                                    <label for="nameInput" class="form-label">Título</label>
-                                    <input type="text" id="nameInput" class="form-control" placeholder="Título"
-                                        required>
+                        <div class="formAdd">
+                            <form id="form__addMovie" action="" method="post">
+                                <div id="registroForm">
+                                    <div class="mb-3">
+                                        <label for="nameInput" class="form-label">Título</label>
+                                        <input type="text" id="nameInput" class="form-control" placeholder="Título"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="genderInput" class="form-label">Género</label>
+                                        <input type="text" id="genderInput" class="form-control" placeholder="Género"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="directorInput" class="form-label">Director</label>
+                                        <input type="text" id="directorInput" class="form-control"
+                                            placeholder="Director" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="imageInput" class="form-label">Portada</label>
+                                        <input type="file" id="imageInput" class="form-control" placeholder="Portada"
+                                            accept=".png, .jpg, .jpeg">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="submit" class="btn btn-primary" id="bSave">Guardar</button>
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="genderInput" class="form-label">Género</label>
-                                    <input type="text" id="genderInput" class="form-control" placeholder="Género"
-                                        required>
+                            </form>
+                        </div>
+                        <div class="formEdit">
+                            <form id="form__editMovie" action="" method="post">
+                                <div id="registroForm">
+                                    <div class="mb-3">
+                                        <label for="nameInputEdit" class="form-label">Título</label>
+                                        <input type="text" id="nameInputEdit" class="form-control" placeholder="Título"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="genderInputEdit" class="form-label">Género</label>
+                                        <input type="text" id="genderInputEdit" class="form-control" placeholder="Género"
+                                            required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="directorInputEdit" class="form-label">Director</label>
+                                        <input type="text" id="directorInputEdit" class="form-control"
+                                            placeholder="Director" required>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="submit" class="btn btn-primary" id="bSave">Guardar</button>
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="timeInput" class="form-label">Duración</label>
-                                    <input type="text" id="timeInput" class="form-control" placeholder="Duración"
-                                        required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="directorInput" class="form-label">Director</label>
-                                    <input type="text" id="directorInput" class="form-control" placeholder="Director"
-                                        required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="imageInput" class="form-label">Portada</label>
-                                    <input type="file" id="imageInput" class="form-control" placeholder="Portada"
-                                        accept=".png, .jpg, .jpeg">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="submit" class="btn btn-primary" id="bSave">Guardar</button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

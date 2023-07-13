@@ -1,72 +1,46 @@
 {
-    "peliculas": [
-      {
-        "id": 1,
-        "name": "El sexto sentido",
-        "clasificacion": "Drama",
-        "director": "M. Night Shyamalan",
-        "image": ""
-        
-      },
-      {
-        "id": 2,
-        "name": "Pulp Fiction",
-        "director": "Tarantino",
-        "clasificacion": "Acción",
-        "image": ""
-      },
-      {
-        "id": 3,
-        "name": "Todo Sobre Mi Madre",
-        "director": "Almodobar",
-        "clasificacion": "Drama",
-        "image": ""
-      },
-      {
-        "id": 4,
-        "name": "300",
-        "director": "Zack Snyder",
-        "clasificacion": "Acción",
-        "image": ""
-      },
-      {
-        "id": 5,
-        "name": "El silencio de los corderos",
-        "director": "Jonathan Demme",
-        "clasificacion": "Drama",
-        "image": ""
-      },
-      {
-        "id": 6,
-        "name": "Forrest Gump",
-        "director": "Robert Zemeckis",
-        "clasificacion": "Comedia",
-        "image": ""
-      },
-      {
-        "id": 7,
-        "name": "Las Hurdes",
-        "director": "Luis Buñuel",
-        "clasificacion": "Documental",
-        "image": ""
-      }
-    ],
-    "clasificaciones": [
-      {
-        "name": "Drama",
-        "id": 1
-      },
-      {
-        "name": "Comedia",
-        "id": 2
-      },
-      {
-        "name": "Documental",
-        "id": 3
-      },
-      {
-        "name": "Acción",
-        "id": 4
-      }
-    ]
-  }
+  "peliculas": [
+    {
+      "id": 2,
+      "name": "Pulp Fiction",
+      "director": "Tarantino",
+      "clasificacion": "Acción",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "Todo Sobre Mi Madre",
+      "director": "Almodobar",
+      "clasificacion": "Drama",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "300",
+      "director": "Zack Snyder",
+      "clasificacion": "Acción",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "El silencio de los corderos",
+      "director": "Jonathan Demme",
+      "clasificacion": "Drama",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "Forrest Gump",
+      "director": "Robert Zemeckis",
+      "clasificacion": "Comedia",
+      "image": ""
+    },
+    {
+      "id": 7,
+      "name": "Las Hurdes",
+      "director": "Luis Buñuel",
+      "clasificacion": "Documental",
+      "image": ""
+    }
+  ]
+}
